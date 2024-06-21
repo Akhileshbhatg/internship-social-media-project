@@ -55,6 +55,9 @@ const NewPost = ({ newPost, setNewPost }) => {
 
         formData.set("caption", caption);
         formData.set("post", postImage);
+        formData.set("postedBy", localStorage.getItem("user_id"))
+
+        console.log(localStorage.getItem("user_id"));
 
         dispatch(addNewPost(formData));
     }

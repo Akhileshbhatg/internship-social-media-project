@@ -54,7 +54,7 @@ const Sidebar = () => {
                             <span className="text-gray-400 text-sm">{user.name}</span>
                         </div>
                     </div>
-                    <span className="text-blue-500 text-xs font-semibold cursor-pointer">Switch</span>
+                    {/* <span className="text-blue-500 text-xs font-semibold cursor-pointer">Switch</span> */}
                 </div>
 
                 {/* <!-- suggestions --> */}
@@ -79,17 +79,17 @@ const Sidebar = () => {
                 <div className="flex flex-col mt-8 space-y-6 text-xs text-gray-400">
                 <div className="flex flex-col">
                     <div className="flex items-center space-x-1.5">
-                        {['About', 'Help', 'Press', 'API', 'Jobs', 'Privacy', 'Terms', 'Locations'].map((el, i) => (
+                        {[].map((el, i) => (
                             <a href="#" key={i}>{el}</a>
                         ))}
                     </div>
                     <div className="flex items-center space-x-1.5">
-                        {['Top Accounts', 'Hashtags', 'Language'].map((el, i) => (
+                        {[].map((el, i) => (
                             <a href="#" key={i}>{el}</a>
                         ))}
                     </div>
                 </div>
-                <span>&copy; {new Date().getFullYear()} INSTAGRAM FROM META</span>
+                <span>&copy; {new Date().getFullYear()} CIRCLECONNECT</span>
             </div>
 
         </div>

@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap");
+
 body {
   background-color: #fafafa;
   font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
 }
 
 .slick-arrow {
@@ -34,4 +37,11 @@ body {
   100% {
     transform: scale(0.4);
   }
+}
+
+.auth-bg {
+  background: url("./assests/images/BG4.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

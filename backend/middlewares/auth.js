@@ -5,7 +5,8 @@ const catchAsync = require("./catchAsync");
 
 exports.isAuthenticated = catchAsync(async (req, res, next) => {
 
-    const { token } = req.cookies;
+    // const { token } = req.cookies;
+    const token = req.headers["authorization"];
 
     if(!token) {
         return next(new ErrorHandler("Please Login to Access", 401));

@@ -82,7 +82,7 @@ const UpdateProfile = () => {
 
     return (
         <>
-            <MetaData title="Edit Profile • Instagram" />
+            <MetaData title="Edit Profile • CircleConnect" />
 
             <form
                 onSubmit={handleUpdate}

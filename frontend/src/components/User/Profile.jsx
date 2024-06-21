@@ -168,10 +168,10 @@ const Profile = () => {
                                 <span onClick={() => setSavedTab(true)} className={`${savedTab ? 'border-t border-black' : 'text-gray-400'} py-3 cursor-pointer flex items-center text-[13px] uppercase gap-3 tracking-[1px] font-medium`}>
                                     {savedTab ? savedIconFill : savedIconOutline} saved</span>
                             )}
-                            <span className="py-3 flex items-center text-gray-400 text-[13px] uppercase gap-3 tracking-[1px] font-medium">
+                            {/* <span className="py-3 flex items-center text-gray-400 text-[13px] uppercase gap-3 tracking-[1px] font-medium">
                                 {reelsIcon} reels</span>
                             <span className="py-3 hidden sm:flex items-center text-gray-400 text-[13px] uppercase gap-3 tracking-[1px] font-medium">
-                                {taggedIcon} tagged</span>
+                                {taggedIcon} tagged</span> */}
                         </div>
 
                         {/* posts grid data */}

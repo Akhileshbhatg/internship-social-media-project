@@ -19,21 +19,21 @@ const ProfileDetails = ({ setProfileToggle }) => {
             icon: profileIcon,
             redirect: `/${user.username}`
         },
-        {
-            title: "Saved",
-            icon: savedIcon,
-            redirect: `/${user.username}`
-        },
+        // {
+        //     title: "Saved",
+        //     icon: savedIcon,
+        //     redirect: `/${user.username}`
+        // },
         {
             title: "Settings",
             icon: settingsIcon,
             redirect: "/accounts/edit"
         },
-        {
-            title: "Switch Account",
-            icon: switchAccountIcon,
-            redirect: "/"
-        },
+        // {
+        //     title: "Switch Account",
+        //     icon: switchAccountIcon,
+        //     redirect: "/"
+        // },
     ]
 
     const handleLogout = () => {

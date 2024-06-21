@@ -6,6 +6,7 @@ const ErrorHandler = require('../utils/errorHandler');
 const sendEmail = require('../utils/sendEmail');
 const crypto = require('crypto');
 const { deleteFile } = require('../utils/awsFunctions');
+const jwt = require('jsonwebtoken');
 
 // Signup User
 exports.signupUser = catchAsync(async (req, res, next) => {
@@ -21,7 +22,6 @@ exports.signupUser = catchAsync(async (req, res, next) => {
         }
         return next(new ErrorHandler("Email already exists", 401));
     }
-    console.log("lalal");
 
     const newUser = await User.create({
         name,
