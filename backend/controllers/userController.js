@@ -34,10 +34,10 @@ exports.signupUser = catchAsync(async (req, res, next) => {
     sendCookie(newUser, 201, res);
 });
 
-exports.lala = catchAsync(async (req, res, next) => {
+// exports.lala = catchAsync(async (req, res, next) => {
 
-   return res.send("khdcvuyyedyevy")
-});
+//    return res.send("khdcvuyyedyevy")
+// });
 
 // Login User
 exports.loginUser = catchAsync(async (req, res, next) => {

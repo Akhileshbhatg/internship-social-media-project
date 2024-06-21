@@ -20,15 +20,15 @@ const post = require('./routes/postRoute');
 const user = require('./routes/userRoute');
 const chat = require('./routes/chatRoute');
 const message = require('./routes/messageRoute');
-
-app.get("/la", (req, res) => {
-    return res.send("hey")
-})
+const forgotPassword = require('./controllers/forgotPassword')
+const resetPassword = require('./controllers/resetPassword')
 
 app.use('/api/v1', post);
 app.use('/api/v1', user);
 app.use('/api/v1', chat);
 app.use('/api/v1', message);
+app.use('/api/user/forgot/password', forgotPassword);
+app.use('/api/user/reset/password', resetPassword);
 
 // error middleware
 app.use(errorMiddleware);
